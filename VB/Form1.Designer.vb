@@ -1,4 +1,6 @@
-﻿Namespace PropertySorting
+﻿Imports Microsoft.VisualBasic
+Imports System
+Namespace PropertySorting
 	Partial Public Class Form1
 		''' <summary>
 		''' Required designer variable.
@@ -35,8 +37,7 @@
 			Me.propertyGridControl1.Name = "propertyGridControl1"
 			Me.propertyGridControl1.Size = New System.Drawing.Size(627, 490)
 			Me.propertyGridControl1.TabIndex = 0
-'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
-'ORIGINAL LINE: this.propertyGridControl1.CustomPropertyDescriptors += new DevExpress.XtraVerticalGrid.Events.CustomPropertyDescriptorsEventHandler(this.propertyGridControl1_CustomPropertyDescriptors);
+'			Me.propertyGridControl1.CustomPropertyDescriptors += New DevExpress.XtraVerticalGrid.Events.CustomPropertyDescriptorsEventHandler(Me.propertyGridControl1_CustomPropertyDescriptors);
 			' 
 			' button1
 			' 
@@ -46,8 +47,7 @@
 			Me.button1.TabIndex = 1
 			Me.button1.Text = "Toggle Sorting"
 			Me.button1.UseVisualStyleBackColor = True
-'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
-'ORIGINAL LINE: this.button1.Click += new System.EventHandler(this.button1_Click);
+'			Me.button1.Click += New System.EventHandler(Me.button1_Click);
 			' 
 			' Form1
 			' 
