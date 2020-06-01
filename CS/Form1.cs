@@ -28,7 +28,6 @@ namespace PropertySorting {
             allowCustomSorting = !allowCustomSorting;
             propertyGridControl1.OptionsBehavior.PropertySort = allowCustomSorting ? DevExpress.XtraVerticalGrid.PropertySort.NoSort : DevExpress.XtraVerticalGrid.PropertySort.Alphabetical;
             propertyGridControl1.Refresh();
-            propertyGridControl1.RetrieveFields();
         }
     }
     class CustomClass {
