@@ -37,7 +37,7 @@ Namespace PropertySorting
             Me.propertyGridControl1.Name = "propertyGridControl1"
             Me.propertyGridControl1.Size = New System.Drawing.Size(627, 490)
             Me.propertyGridControl1.TabIndex = 0
-            AddHandler Me.propertyGridControl1.CustomPropertyDescriptors, New DevExpress.XtraVerticalGrid.Events.CustomPropertyDescriptorsEventHandler(AddressOf Me.propertyGridControl1_CustomPropertyDescriptors)
+            Me.propertyGridControl1.CustomPropertyDescriptors += New DevExpress.XtraVerticalGrid.Events.CustomPropertyDescriptorsEventHandler(AddressOf Me.propertyGridControl1_CustomPropertyDescriptors)
             ' 
             ' button1
             ' 
@@ -47,7 +47,7 @@ Namespace PropertySorting
             Me.button1.TabIndex = 1
             Me.button1.Text = "Toggle Sorting"
             Me.button1.UseVisualStyleBackColor = True
-            AddHandler Me.button1.Click, New System.EventHandler(AddressOf Me.button1_Click)
+            Me.button1.Click += New System.EventHandler(AddressOf Me.button1_Click)
             ' 
             ' Form1
             ' 
